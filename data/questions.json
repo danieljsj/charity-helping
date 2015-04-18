@@ -1,0 +1,14 @@
+[
+	{
+		"name": "ecology",
+		"prompt": "How important is saving the planet from global warming?"
+	},
+	{
+		"name": "poverty",
+		"prompt": "How important is it to prevent poverty?"
+	},
+	{
+		"name": "justice",
+		"prompt": "How important is it to assure social equality, justice, and respect for all?"
+	}
+]
