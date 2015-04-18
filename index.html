@@ -8,7 +8,7 @@
 		<div ng-controller="quiz">
 			<div ng-repeat="q in questions">
 				<label>
-					<input type="range" min="0" max="10" ng-model="q.response"/>
+					<input type="range" min="0" max="10" ng-model="user.responses[q.name]"/>
 					{{ q.prompt }}
 				</label>
 			</div>
