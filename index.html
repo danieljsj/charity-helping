@@ -1,22 +1,29 @@
 <html ng-app="charityHelping">
 	<head>
 		<script src="angular.js"></script>
-		<script src="charity.js"></script>
-		<script src="quiz.js"></script>
+		<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.js"></script>
+
+
 	</head>
 	<body>
 		<div ng-controller="quiz">
-			<div ng-repeat="q in questions">
+			<div ng-repeat="q in data.questions">
 				<label>
-					<input type="range" min="0" max="10" ng-model="user.responses[q.name]"/>
+					<input 
+						type="range" min="0" max="10" 
+						ng-model="data.users[0].responses[q.name]"
+					/>
 					{{ q.prompt }}
 				</label>
 			</div>
-			<div ng-repeat="o in organizations | orderBy:'-score'">
+			<div ng-repeat="o in data.organizations | orderBy:'-score'">
 				<span style="font-size:{{ orgScore(o) / 3 }}">
 					{{ o.name }}: {{ orgScore(o) }}
 				</span>
 			</div>
 		</div>
+		<script src="charity.js"></script>
+		<script src="quiz.js"></script>
 	</body>
 </html>

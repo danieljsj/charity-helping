@@ -1,1 +1,1 @@
-var app = angular.module('charityHelping', []);
+var app = angular.module('charityHelping', ['firebase']);
