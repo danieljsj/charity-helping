@@ -1,0 +1,29 @@
+[
+	{
+		"name":"IJM",
+		"responses":
+		{
+			"ecology":1,
+			"poverty":5,
+			"justice":10
+		}
+	},
+	{
+		"name":"Greenpeace",
+		"responses":
+		{
+			"ecology":10,
+			"poverty":3,
+			"justice":3
+		}
+	},
+	{
+		"name":"WorldVision",
+		"responses":
+		{
+			"ecology":1,
+			"poverty":9,
+			"justice":6
+		}
+	}
+]

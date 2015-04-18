@@ -1,0 +1,29 @@
+[
+	{
+		"name":"Daniel",
+		"responses":
+		{
+			"ecology":1,
+			"poverty":5,
+			"justice":10
+		}
+	},
+	{
+		"name":"Rebekah",
+		"responses":
+		{
+			"ecology":10,
+			"poverty":3,
+			"justice":3
+		}
+	},
+	{
+		"name":"Aidan",
+		"responses":
+		{
+			"ecology":1,
+			"poverty":9,
+			"justice":6
+		}
+	}
+]

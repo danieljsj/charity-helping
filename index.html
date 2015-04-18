@@ -1,0 +1,22 @@
+<html ng-app="charityHelping">
+	<head>
+		<script src="angular.js"></script>
+		<script src="charity.js"></script>
+		<script src="quiz.js"></script>
+	</head>
+	<body>
+		<div ng-controller="quiz">
+			<div ng-repeat="q in questions">
+				<label>
+					<input type="range" min="0" max="10" ng-model="q.response"/>
+					{{ q.prompt }}
+				</label>
+			</div>
+			<div ng-repeat="o in organizations | orderBy:'-score'">
+				<span style="font-size:{{ orgScore(o) / 3 }}">
+					{{ o.name }}: {{ orgScore(o) }}
+				</span>
+			</div>
+		</div>
+	</body>
+</html>
